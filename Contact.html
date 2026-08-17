@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Rifuwo's Horse Farm</title>
+
+    <style>
+        * {
+            box-sizing:border-box ;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+        header p {
+            color: white;
+        }
+
+        nav {
+            background-color: white;
+        }
+        .contact-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20ox;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .intro h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .intro p {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .contact-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 300px;
+            box-shadow: 0 4px 12px, rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: white;
+        }
+
+        .whatsapp {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .whatsapp:hover {
+            background-color: black;
+        }
+
+        from {
+            margin-top: 35px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px, white(0, 0, 0, 0.15);
+        }
+
+        form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, 
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border:  1px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 20px;
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 13px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+
+        footer {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Rifuwo's Horse Farm</h1>
+        <p>Where Every Ride Becomes a Memory</p>
+    </header>
+
+    <nav>
+        <a href=""></a>
+        <a href="">About Us</a>
+        <a href=""Service></a>
+        <a href=""Gallery></a>
+        <a href=""Contact></a>
+    </nav>
+
+    <main class="contact-container">
+
+        <section class="intr">
+            <h2>Contact Us</h2>
+
+            <p>
+                Have a question about horse riding, riding lessons,farm visits or bookings? We would love to near from you.
+                Contact Rifuwo's Horse Farmand our team will be happy to assist you.
+            </p>
+        </section>
+
+        <section class="contact-box">
+
+            <div class="card">
+                <h3>Our Location</h3>
+                <p>
+                    Rifuwo's Horse Farm<br>
+                    [55 Sunset Dr, Nietgedacht 535-jq, Muldersdrift, 1739]<br>
+                    South Africa
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>phone</h3>
+                <p>
+                    +27 73 224 1575
+                </p>
+
+                <h3>Email</h3>
+                <p>
+                    ntsakelo86@gmail.com
+                </p>
+            
+            </div>
+
+            <div class="card">
+                <h3>whatsapp</h3>
+
+                <p>
+                    Chat with us directly on whatsapp bookings, questions and more information
+                </p>
+
+                <a>
+                    class="whatsapp"
+                    href="https://wa.me/27732241575?"
+                    text="Hello%20Rifuwo's%20Horse%20Farm,%20I%20would%20like%20to%20an%20enquiry"
+                    target="-blank">
+                    Chat on whatsapp
+                </a>
+            </div>
+
+        </section>
+
+        <form>
+            <h2>Send Us a Message </h2>
+            <label for="name"Full Name></label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required>
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required>
+            
+            <label for="Message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                placeholder="How can we help you?"
+                required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ruwo's Horse Farm. All Rights Reserved.</p>
+        <p>Where Every Ride Becomes a Memory</p>
+    </footer>
+</body>
+</html>

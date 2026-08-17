@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website work properly on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services | Rifuwo's Horse Farm</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+           margin: 0;
+           font-family: Arial, sans-serif; 
+           background-color: white;
+           color: black;
+        }
+
+        /* Header */
+        header {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            color: white;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: black;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* Main contebt */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin: 35px;
+        }
+
+        .intro h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .intro p {
+            font-size: 17px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        /* Service */
+        .service {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .service-card .icon {
+            font-size: 45px;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            margin: 15px 0 10px;
+        }
+
+        .service-card p {
+            color: white;
+            line-height: 1.6;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            margin: 15px;
+        }
+
+        /* Booking button */
+        .book-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .booking-button:hover {
+            background-color: black;
+        }
+
+        /* Information section */
+        .info {
+            background-color: black;
+            margin-top: 40px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .info h2 {
+            margin-top: o;
+        }
+
+        /* Footer */
+        footer {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 800px) {
+
+            .service {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 500px) {
+
+            .service {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+        }
+            
+    </style>
+       
+</head>
+      
+<body>
+    <!-- Header -->
+    <header>
+
+        <h1>Rifuwo's Horse Farm</h1>
+
+        <p>Where Every Ride Becomes a Memory</p>
+             
+    </header>
+
+
+    <!-- Navigation -->
+     <nav>
+
+        <a href="index.html">Home</a>
+        <a href="Aboutus.html">About Us</a>
+        <a href="service.html">Service</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="Contact.html">Contact</a>
+
+     </nav>
+
+
+     <!-- Main content -->
+     <main class="container">
+
+        <section class="ontro">
+
+            <h2>Our Services</h2>
+
+            <p>
+                At Rifuwo's Horse Farm, we offer enjoyable and memorable experiencefor horse lovers, famalies, beginners and experience riders.
+            </p>
+
+        </section>
+
+
+        <!-- Service cards -->
+        <section class="service">
+
+
+            <!-- Service 1 -->
+            <div class="service card">
+
+                <div class="icon"></div>
+                <h3>Horse Riding</h3>
+
+                <p>
+                    Enjoy a relaxing one hour guided horse ride while exploring the beautiful surroundings of Rifuwo's Horse Farm.
+                </p>
+
+                <div  class="price">
+                     R450 per person
+                </div>
+
+                <a href="enquiry.html" class="book-button">
+                    Book a Ride
+                </a>
+
+
+                <!-- Service 2 -->
+                <div class="service-card">
+
+                    <div class="icon"></div>
+
+                    <h3>Riding Lessons</h3>
+
+                    <p>
+                        Learning basic horse-riding skills with guidance. Suitable for beginners who want to learn howto safely interact with and ride a horse
+                    </p>
+
+                    <div class="price">
+                        R450 per lesson
+                    </div>
+
+                    <a href="enquiry.html" class="book-button">
+                        Enquire Now
+                    </a>
+
+                </div>
+
+
+                <!-- Service 3-->
+                <div class="icon"></div>
+
+                <h3>Famaly Experience</h3>
+
+                <p>
+                    Spend quality time with family while enjoying horse-related activities in a peaceful farm environment.
+                </p>
+
+                <div class="price">
+                    From R250 per person
+                </div>
+
+                <a href="enquiry.html" class="book-button">
+                    Enquire Now
+                </a>
+
+            </div>
+
+
+            <!-- Service 4 -->
+            <div class="service-card">
+
+                <div class="icon"></div>
+
+                <h3>Horse Care Experience</h3>
+
+                <p>
+                    Learn more about horses and how they are groomed, fed and cared for at the farm.
+                </p>
+
+                <div class="price">
+                    R200 per person
+                </div>
+
+                <a href="enquiry.html" class="book-button">
+                    Enquire Now
+                </a>
+
+            </div>
+
+
+            <!-- Service 5-->
+            <div class="service-card">
+
+                <div class="icon"></div>
+
+                <h3>Scenic Trail Ride</h3>
+
+                <p>
+                    Enjoy a longer guided ride and experience the peaceful natural surroundings of the farm.
+                </p>
+
+                <div class="price">
+                    R600 per person
+                </div>
+
+                <a href="enquiry.html" class="book-button">
+                    Book Now
+                </a>
+
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card">
+
+                <div class="icon"></div>
+
+                <h3>Sunset Ride</h3>
+
+                <p>
+                    Enjoy a beautiful evening horse ride and experience the farm during sunset
+                </p>
+
+                <div class="price">
+                    R750 per person
+                </div>
+
+                <a href="enquiry.html" class="book-button">
+                    Book Now
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- Important information -->
+        <section class="info">
+            <h2>Impotant information</h2>
+
+            <p>
+                All ride should be booked in advance.
+                Prices may vary depending the activity, number of people and duration of the experience.
+            </p>
+
+            <p>
+                For booking and more information, please visit our Enquiry page or contact Rifuwo's Horse Farm
+            </p>
+
+        </section>
+
+     </main>
+
+     <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Rifuwo's Horse Farm
+        </p>
+
+        <p>
+            Where Every Ride Becomes a Memory
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

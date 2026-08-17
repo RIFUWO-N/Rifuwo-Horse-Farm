@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Make the website resonsive on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Rifuwo's Horse Farm</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+        }
+
+        /* Header */
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            color: white;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: black;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* Main content */
+        .container{
+            max-width: 1100px;
+            margin: 40px;
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .intro h2 {
+            font-size: 32px;
+            max-width: 10px;
+        }
+
+        .intro p {
+            font-size: 17px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Gallery */
+        .gallery-item {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+         }
+
+         .gallery-item {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+         }
+
+         .gallery-item img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            display: block;
+         }
+
+         .gallery-item h3 {
+            text-align: center;
+            margin: 15px 10px 5px;
+         }
+
+         .gallery-item p {
+            text-align: center;
+            padding: 0 15px 15px;
+            margin: 0;
+            color: white;
+         }
+
+         .gallery-item:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+         }
+
+         /* Footer */
+         footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+         }
+
+         /* Responsive */
+         @media (max-width: 800px) {
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+         }
+
+         @media (max-width: 500px) {
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+         }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!-- Header -->
+     <header>
+        <h1>Rifuwo's Horse Farm</h1>
+
+        <p>Where Every Ride Becomes a Memory</p>
+
+     </header>
+
+
+     <!-- Navigation -->
+      <nav>
+
+        <a href="index.html">Home</a>
+        <a href="Aboutus.html">About Us</a>
+        <a href="service.html">Service</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+
+
+      <!-- Main Gallery -->
+      <main class="container">
+        <section class="intro">
+
+            <h2>Our Gallery</h2>
+
+            <p>
+                Take a look at the beautiful horses, exciting riding activities and peaceful surroundings of Rifuwo's Horse Farm.
+            </p>
+
+        </section>
+
+
+        <section class="gallery">
+
+            <!-- Image 1-->
+             <div class="gallery-item">
+
+                <img src="images/IMAGE 1.1.jpg"
+                     alt="Rifuwo's Horse Farm">
+                <img src="images/IMAGE 1.2.webp"
+                     alt="Rifuwo's Horse Farm">
+
+                <h3>Our Beautiful Horses</h3>
+
+                <p>
+                    Meet some of the wonderful horses at our farm
+                </p>
+
+             </div>
+
+
+             <!-- Image 2 -->
+              <div class="gallery item">
+                <img src="images/IMAGE 2.webp"
+                     alt="Horse riding experience">
+                <img src="images/IMAGE 2.2.webp"
+                     alt="Horse riding experience">
+
+                <h3>Horse Riding</h3>
+
+                <p>
+                    Enjoy a relaxing and memorable horse-riding experience.
+                </p>
+
+              </div>
+
+
+              <!-- Image 3 -->
+              <div class="gallery-item">
+
+                <img src="images/IMAGE 3.webp"
+                    alt="Horse riding lesson">
+                <img src="images/image 1.jpg"
+                     alt="Horse riding lessons">
+
+                <h3>Riding Lessons</h3>
+
+                <p>
+                    Learn the basics of horse riding with guidance
+                </p>
+
+              </div>
+
+
+              <!-- Image 4 -->
+              <div class="gallery-item">
+
+                <img src="images/IMAGE 4.jpg"
+                     alt="Horse at the Farm">
+                <img src="images/image 4.2.jpg"
+                     alt="Horse at the Farm">
+
+                <h3>Life at the Far</h3>
+
+                <p>
+                    Experience the peaceful atmosphere of our horse farm.
+                </p>
+
+              </div>
+
+
+              <!-- Image 5 -->
+              <div class="gallery-item">
+
+                <img src="images/IMAGE 5.jpg"
+                     alt="Horse care">
+                <img src="images/IMAGE 5.2.jpg"
+                     alt="Horse care">
+
+                     <h3>Horse care</h3>
+
+                     <p>
+                        We believe every horse deserves care, respect and attention.
+                     </p>
+
+              </div>
+
+
+              <!-- Image 6 -->
+              <div class="gallery-item">
+
+                <img src="images/IMAGE 6.webp"
+                     alt="Horse farm scenery">
+                <img src="images/image 6..2.webp"
+                     alt="Horse farm scenery">
+
+                <h3>Farm Scener</h3>
+                <p>
+                    Enjoy the natural beauty and peaceful surroundings.
+                </p>
+
+              </div>
+
+        </section>
+
+      </main>
+
+      <!-- Footer -->
+      <footer>
+
+        <p>
+            &copy; 2026 Rifuwo's Horse Farm
+        </p>
+
+        <p>
+            Where Every Ride Becomes a Memory
+        </p>
+
+      </footer>
+
+</body>
+
+</html>
